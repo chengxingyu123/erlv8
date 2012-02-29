@@ -1,6 +1,6 @@
 -module(erlv8).
 -export([start/0,stop/0]).
--include_lib("erlv8/include/erlv8.hrl").
+-include_lib("../include/erlv8.hrl").
 
 start() ->
 	application:start(erlv8).

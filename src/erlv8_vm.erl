@@ -1,7 +1,7 @@
 -module(erlv8_vm).
 
 -behaviour(gen_server2).
--include_lib("erlv8/include/erlv8.hrl").
+-include_lib("../include/erlv8.hrl").
 
 %% API
 -export([start_link/1,start/0,vm_resource/1,run/2,run/3,run/4,global/1,stop/1,

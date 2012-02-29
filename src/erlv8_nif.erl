@@ -18,7 +18,8 @@ init() ->
 		false ->
 			case code:which(erlv8_nif) of
 				Filename when is_list(Filename) ->
-					erlang:load_nif(filename:join([filename:dirname(Filename),"../priv/erlv8_drv"]), Preemption);
+%% 					erlang:load_nif(filename:join([filename:dirname(Filename),"../priv/erlv8_drv"]), Preemption);
+					erlang:load_nif("./erlv8_drv", Preemption);
 				Err ->
 					Err
 			end;
